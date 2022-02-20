@@ -9,7 +9,6 @@ To design a website to perform mathematical calculations in server side.
 Create a Django project.
 
 
-
 ### Step 2:
 Create an App named mathapp.
 
@@ -26,15 +25,12 @@ Create a html document in the mathapp.
 In the html document design the page as required for getting the input values for doing mathematical calculation.
 
 
-
 ### Step 6:
 Add the formula in views.py.
 
 
 ### Step 7:
 Link the html document to urls.py.
-
-Publish the website in the given URL.
 
 ## PROGRAM :
 ### HTML Code:
