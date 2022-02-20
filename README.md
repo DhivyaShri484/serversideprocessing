@@ -38,6 +38,7 @@ Publish the website in the given URL.
 
 ## PROGRAM :
 ### HTML Code:
+```
 <!DOCTYPE html>
 <html>
 <head>
@@ -86,8 +87,9 @@ Publish the website in the given URL.
     </div>
 </body>
 </html>
-
+```
 ### Views.py:
+```
 from django.shortcuts import render
 
 def areacalculation(request):
@@ -103,8 +105,9 @@ def areacalculation(request):
         context["l"] = l
         context["w"] = w
     return render(request,"mathapp/area.html",context)
-
+```
 ### URLs.py:
+```
 from django.contrib import admin
 from django.urls import path
 from mathapp import views
@@ -114,7 +117,7 @@ urlpatterns = [
    path("areaofrectangle/",views.areacalculation,name="areaofrectangle"),
    path("",views.areacalculation,name="areaofrectangleroot")
 ]
-
+```
 
 ## OUTPUT:
 <img width="247" alt="2022-02-20 (4)" src="https://user-images.githubusercontent.com/94505585/154838076-ca3fe06a-3e1d-4021-9d5d-1b1eb97fd795.png">
