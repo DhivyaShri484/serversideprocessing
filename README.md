@@ -34,6 +34,7 @@ Link the html document to urls.py.
 
 ## PROGRAM :
 ### area.html:
+```
 <!DOCTYPE html>
 <html>
 <head>
@@ -96,7 +97,10 @@ Link the html document to urls.py.
         </form>
     </div>
 </body>
+```
+
 ### views.py:
+```
 from django.shortcuts import render
 
 def areacalculation(request):
@@ -113,7 +117,9 @@ def areacalculation(request):
         context['b']=b
         context['h']=h
     return render(request,"mathapp/area.html",context)
+```
 ### urls.py:
+```
 from django.urls import path
 from mathapp import views
 
@@ -122,7 +128,7 @@ urlpatterns = [
     path('areaofrectangle/',views.areacalculation,name="areaofrectangle"),
     path('',views.areacalculation,name="areaofrectangle")
 ]
-
+```
 
 
 ## OUTPUT:
